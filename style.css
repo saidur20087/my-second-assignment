@@ -48,12 +48,14 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #49494b;
+    padding: 0 120px;
 }
 
 .navber .logo {
     font-weight: 700;
     font-size: 3.2rem;
     color: #FFFFFF;
+    margin: 0 20px;
 }
 
 .navber .logo span {
@@ -150,6 +152,7 @@ body {
     font-weight: 700;
     font-size: 3.5rem;
     color: white;
+
 }
 
 .hero-text p {
