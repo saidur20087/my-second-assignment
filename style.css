@@ -520,6 +520,22 @@ body {
 
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    .card-section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+         gap: 20px;
+         grid-template-areas: 
+            "audio mobile mobile"
+            "audio global global"
+            "interview interview resources";
+            margin-bottom: 50px;
+    }
+    
+    .audio { grid-area: audio; }
+    .mobile { grid-area: mobile; }
+    .global { grid-area: global; }
+    .interview { grid-area: interview; }
+    .resources { grid-area: resources; }
     /* .card-section {
         grid-template-columns: 1fr 1fr; 
         grid-template-areas: none; 
