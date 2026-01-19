@@ -520,10 +520,10 @@ body {
 
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .card-section {
+    /* .card-section {
         grid-template-columns: 1fr 1fr; 
         grid-template-areas: none; 
-    }
+    } */
     .audio, .mobile, .global, .interview, .resources {
         grid-area: auto; 
     }
