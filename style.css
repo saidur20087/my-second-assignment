@@ -259,7 +259,8 @@ body {
     padding: 50px 120px;  
 }
 
-.why-chose-section, .Featured-Episodes h2{
+.why-chose-section h2, .Meet-Host h2,
+ .Featured-Episodes h2{
     font-weight: 600;
     font-size: 2.8rem;
     color: white;
@@ -295,7 +296,7 @@ body {
     height: 30px;
     margin: 0 auto;
 }
-.card-container h3{
+.card-container h3 {
     font-size: 1rem;
     font-weight: 500;
     color: white;
@@ -317,7 +318,7 @@ body {
     text-align: center;
     justify-items: center;
     margin: 40px auto;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
 }
 
 .episodes-container{
@@ -381,11 +382,110 @@ body {
     font-weight: 300;
 }
 
+/* meet-container */
 
+.Meet-Host{
+    margin-bottom: 120px;
+}
+.meet-container{
+    background-color: #29104b;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #29104b;
+    margin: 0 auto;
+}
 
+.meet-content h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    margin: 5px auto;
+}
 
+.meet-content p{
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: rgb(212, 207, 207);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
+.social-link{
+ display: flex;
+ gap: 20px;
+ align-items: center;
+ margin: 0 auto;
 
+}
+.social-link img{
+    width: 24px;          
+    height: 24px;
+    padding: 10px;            
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 50%;       
+    cursor: pointer;
+    transition: all 0.3s ease;
+   
+}
+/* Fotter */
+.fotter{
+    background: url('./assets/footer-bg.png') no-repeat center/cover ;
+    border: none;
+    position: relative;
+    height: 100px;
+    padding: 80px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.fotter-section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.fotter-section h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.fotter-section span {
+    color: #ff3cbe;
+}
+.fotter-icon{
+    justify-content: center;
+    align-items: center;
+}
+
+.fotter-icon .social-icon{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.social-icon a{
+  font-weight: 300;
+    font-size: 0.6rem;
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.fotter-text{
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
 
 
 
@@ -514,6 +614,42 @@ body {
 .card-text h3 {
     font-size: 1.2rem;
     font-weight: 600;
+}
+/* Meet-Host */
+.Meet-Host h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.meet-container{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+/* Fotter */
+.fotter {
+    min-height: 30vh;
+    padding: 10px 5px;
+}
+.social-icon a{
+    gap: 5px;;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.social-icon{
+ margin-right: 25px;
+}
+.fotter-section h2{
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+.fotter-icon .social-icon{
+grid-template-columns: repeat(4,1fr);
+gap: 5px;
+justify-items: center;
+
 }
 }
 
