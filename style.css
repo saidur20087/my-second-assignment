@@ -201,6 +201,58 @@ body {
     justify-content: center;
 }
 
+/* About Section */
+.about-section {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.about-container h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+    margin: 0 auto;
+}
+
+.about-container p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    color: white;
+    padding: 0 200px;
+}
+
+.about-content {
+    margin-bottom: 30px;
+}
+
+.about-section hr {
+    margin: 80px 200px;
+    border: 0.5px solid gray;
+    color: gray;
+}
+
+.about-subcriber {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.subcriber-content h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #00FF88;
+    margin: 0 auto;
+}
+
+.subcriber-content p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: white;
+}
+
 
 
 
@@ -244,6 +296,15 @@ body {
         margin-bottom: 50px;
     }
 
+    .hero-text p {
+        padding: 0 40px;
+        margin: 20 auto;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
     .mic-icon {
         width: 60px;
     }
@@ -254,8 +315,33 @@ body {
         top: 5px;
     }
 
+    /* about section */
+    .about-section {
+        margin-top: 80px;
+    }
 
+    .about-container h2 {
+        width: 60vw;
+        font-weight: 500;
+    }
+
+    .about-container p {
+        padding: 0 50px;
+        margin: 30px;
+        text-align: center;
+    }
+
+    .about-subcriber {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .about-subcriber {
+        width: 120px;
+    }
 }
+
+
 
 
 /* Rsponsive for Desktop */
