@@ -259,7 +259,7 @@ body {
     padding: 50px 120px;  
 }
 
-.why-chose-section h2{
+.why-chose-section, .Featured-Episodes h2{
     font-weight: 600;
     font-size: 2.8rem;
     color: white;
@@ -275,6 +275,7 @@ body {
         "audio mobile mobile"
         "audio global global"
         "interview interview resources";
+        margin-bottom: 50px;
 }
 
 .audio { grid-area: audio; }
@@ -301,11 +302,76 @@ body {
     margin: 5px auto;
 }
 
-.card-container p{
+.card-container, .card-text p{
     font-weight: 300;
     font-size: 0.8rem;
+    line-height: 1.6;
     color: rgb(212, 207, 207);
 }
+
+/* Featured-Episodes */
+.Featured-Episodes{
+    background-color: #1A0B2E;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    justify-items: center;
+    margin: 40px auto;
+    margin-bottom: 120px;
+}
+
+.episodes-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 90vw;
+    padding: 0 80px;
+}
+
+
+.Featured-content{
+    background-color: #250D44;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 20px;
+
+}
+
+.video-wrapper{
+    width: 100%;
+    margin: 0 auto;
+
+}
+.video-wrapper iframe{
+    margin: 0 auto;
+}
+.card-text {
+    padding:24px;
+    margin: 0 auto;
+
+}
+.card-text h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0 auto;
+
+}
+.time-info{
+    display: flex;
+    gap: 10px;
+}
+
+.time-info span{
+    color: hsla(152, 100%, 50%, 0.842);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
 
 
 
@@ -422,13 +488,38 @@ body {
         font-size: 2rem;
         margin: 10px auto;
 }
+
+/* episodes-container */
+
+.episodes-container{
+    grid-template-columns:1fr;
+}
+.Featured-Episodes h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.video-wrapper{
+    width: 100%;
+}
+.card-text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 }
 
 
 
 
 /* Rsponsive for Desktop */
-@media screen and (min-width: 576px) and (max-width: 1440px) {
+
+@media screen and (min-width: 576px) and (max-width: 1440px){
+    .mobile-navbar {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
     .card-section {
         grid-template-columns: 1fr 1fr; 
         grid-template-areas: none; 
@@ -436,7 +527,5 @@ body {
     .audio, .mobile, .global, .interview, .resources {
         grid-area: auto; 
     }
-    .mobile-navbar {
-        display: none;
-    }
+
 }
