@@ -95,20 +95,19 @@ body {
     cursor: pointer;
 }
 
-.btn-primary,
-.btn-primary-hero1:hover {
+.btn-primary:hover,
+.btn-primary-hero1:hover,
+.btn-subscribe:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 15px rgba(122, 60, 255, 0.7);
 }
 
 /* hero-section */
 .banner-section {
-    background: url('./assets/hero-bg.png') no-repeat center center/cover;
+    background: url('./assets/hero-bg.png') no-repeat center/cover;
     min-height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     color: white;
     padding: 10px 10px;
     margin-top: 80px;
@@ -130,7 +129,7 @@ body {
     width: 100px;
 }
 
-.live-badge {
+.small-badge {
     position: absolute;
     top: 10px;
     right: 50px;
@@ -152,6 +151,7 @@ body {
     font-weight: 700;
     font-size: 3.5rem;
     color: white;
+    margin: 0 auto;
 
 }
 
@@ -160,6 +160,7 @@ body {
     font-size: 1rem;
     color: white;
     margin-bottom: 24px;
+    margin: 0 auto;
 }
 
 .btn-primary-hero1 {
