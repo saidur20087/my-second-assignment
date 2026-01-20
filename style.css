@@ -48,8 +48,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #49494b;
-  justify-items: center;
-  padding: 5px 120px;
+    justify-items: center;
+    padding: 5px 120px;
 }
 
 .navber .logo {
@@ -109,9 +109,10 @@ body {
 
 .hero-container {
     background: url('./assets/hero-bg.png') no-repeat center center/cover;
-   align-content: center;
- 
+    align-content: center;
+
 }
+
 .banner-section {
     display: flex;
     justify-content: center;
@@ -132,19 +133,21 @@ body {
     align-items: center;
 }
 
+/* Animation */
 .mic-icon {
     width: 100px;
     transition: transform 0.5s ease-in-out;
 }
 
 .hero-img:hover .mic-icon {
-    animation: continuous-rotate 2s linear infinite; 
+    animation: continuous-rotate 2s linear infinite;
 }
 
 @keyframes continuous-rotate {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -269,21 +272,21 @@ body {
     color: white;
 }
 
-.about-line{
+.about-line {
     border-bottom: 1px solid #49494b;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
 /* why-chose-section */
-.why-chose-section{
-    margin-top: 120px;
+.why-chose-section {
+    margin-top: 80px;
     background-color: #230E3D;
-    padding: 50px 120px; 
+    padding: 50px 120px;
 }
 
-.why-chose-section h2, .Meet-Host h2
-{
+.why-chose-section h2,
+.Meet-Host h2 {
     font-weight: 600;
     font-size: 2.8rem;
     color: white;
@@ -291,38 +294,52 @@ body {
     text-align: center;
 }
 
-.card-section{
+.card-section {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-     gap: 20px;
-     grid-template-areas: 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas:
         "audio mobile mobile"
         "audio global global"
         "interview interview resources";
-        margin-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 
-.audio { grid-area: audio; }
-.mobile { grid-area: mobile; }
-.global { grid-area: global; }
-.interview { grid-area: interview; }
-.resources { grid-area: resources; }
+.audio {
+    grid-area: audio;
+}
 
-.card-container{
+.mobile {
+    grid-area: mobile;
+}
+
+.global {
+    grid-area: global;
+}
+
+.interview {
+    grid-area: interview;
+}
+
+.resources {
+    grid-area: resources;
+}
+
+.card-container {
     background-color: #351165;
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 20px;
     border-radius: 20px;
     border: 1px solid #3d2b5e;
-    justify-items: center;
 }
 
-.card-container img{
+.card-container img {
     height: 30px;
     margin: 0 auto;
 }
+
 .card-container h3 {
     font-size: 1rem;
     font-weight: 500;
@@ -330,7 +347,8 @@ body {
     margin: 5px auto;
 }
 
-.card-container, .card-text p{
+.card-container,
+.card-text p {
     font-weight: 300;
     font-size: 0.8rem;
     line-height: 1.6;
@@ -338,11 +356,12 @@ body {
 }
 
 /* Featured-Episodes */
-.Featured-Section{
+.Featured-Section {
     margin-top: 50px;
     margin-bottom: 100px;
 }
-.Featured-Episodes{
+
+.Featured-Episodes {
     background-color: #1A0B2E;
     color: white;
 }
@@ -356,27 +375,28 @@ body {
     text-align: center;
 }
 
-.episodes-container{
+.episodes-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding-left: 80px;
     padding-right: 80px;
 }
 
 
-.Featured-content{
+.Featured-content {
     background-color: #250D44;
     border-radius: 20px;
     text-align: left;
     flex-direction: column;
     gap: 20px;
 }
+
 .video-wrapper {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
-    background-color: #000; 
+    background-color: #000;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
@@ -391,22 +411,24 @@ body {
 }
 
 .card-text {
-    padding:24px;
+    padding: 24px;
     margin: 0 auto;
 
 }
-.card-text h3{
+
+.card-text h3 {
     font-weight: 600;
     font-size: 1.5rem;
     margin: 0 auto;
 
 }
-.time-info{
+
+.time-info {
     display: flex;
     gap: 10px;
 }
 
-.time-info span{
+.time-info span {
     color: hsla(152, 100%, 50%, 0.842);
     font-size: 1rem;
     font-weight: 300;
@@ -414,10 +436,11 @@ body {
 
 /* meet-container */
 
-.Meet-Host{
-    margin-bottom: 120px; 
+.Meet-Host {
+    margin-bottom: 120px;
 }
-.meet-container{
+
+.meet-container {
     background-color: #29104b;
     display: flex;
     justify-content: space-between;
@@ -428,14 +451,14 @@ body {
     margin: 0 auto;
 }
 
-.meet-content h3{
+.meet-content h3 {
     font-size: 1.6rem;
     font-weight: 500;
     color: white;
     margin: 5px auto;
 }
 
-.meet-content p{
+.meet-content p {
     font-weight: 300;
     font-size: 0.8rem;
     line-height: 1.6;
@@ -444,77 +467,84 @@ body {
     margin-bottom: 20px;
 }
 
-.social-link{
- display: flex;
- gap: 20px;
- align-items: center;
- margin: 0 auto;
+.meet-social-link {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
 
 }
-.social-link img{
-    width: 24px;          
+
+.meet-social-link img {
+    width: 24px;
     height: 24px;
-    padding: 10px;            
-    border: 1px solid rgba(255, 255, 255, 0.2); 
-    border-radius: 50%;       
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
-   
+
 }
+
 /* Fotter */
-.fotter{
-    background: url('./assets/footer-bg.png') no-repeat center/cover ;
+.fotter-section {
+    background: url('./assets/footer-bg.png') no-repeat center/cover;
     border: none;
     position: relative;
-    height: 100px;
-    padding: 80px;
+    height: 400px;
+    width: 100vw;
     display: grid;
     justify-items: center;
     align-content: center;
 }
 
-.fotter-section {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.fotter-section h2{
-    font-weight: 600;
-    font-size: 2.5rem;
+.fotter-logo h2 {
+    font-weight: 800;
+    font-size: 5rem;
     color: #FFFFFF;
     margin: 0 auto;
+    text-align: center;
 }
 
 .fotter-section span {
     color: #ff3cbe;
 }
-.fotter-icon{
+
+.fotter-icon {
     justify-content: center;
     align-items: center;
 }
 
-.fotter-icon .social-icon{
+.social-icon {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
-}
-.social-icon a{
-  font-weight: 300;
-    font-size: 0.6rem;
-    color: #FFFFFF;
-    margin: 0 auto;
-    text-decoration: none;
+    padding: 20px;
 }
 
-.fotter-text{
-    font-weight: 400;
-    font-size: 0.6rem;
-    color: #FFFFFF;
+.social-icon a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #868484;
     margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-icon a i {
+    color: white;
+}
+
+.fotter-text {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #a5a3a3;
+    margin: 0 auto;
+    text-align: center;
+
 }
 
 
@@ -549,17 +579,17 @@ body {
     }
 
     .banner-section {
-        flex-direction: column; 
-        align-items: center;    
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        margin-top: 40px;      
+        margin-top: 40px;
     }
 
 
     .hero-img {
-        width: 250px;    
+        width: 250px;
         height: 250px;
-        margin-right: 0;        
+        margin-right: 0;
     }
 
 
@@ -572,19 +602,20 @@ body {
     }
 
     .small-badge {
-        right: 20px;            
+        right: 20px;
         font-size: 0.8rem;
     }
 
     .hero-text h1 {
-        font-size: 2.2rem;    
+        font-size: 2.2rem;
         line-height: 1.2;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .hero-text p {
         font-size: 0.9rem;
-        padding: 0 10px;       
+        padding: 0 10px;
     }
 
     .live-badge {
@@ -593,119 +624,155 @@ body {
         top: 5px;
     }
 
-    .small-badge{
+    .small-badge {
         top: 20px;
         right: 10px;
     }
 
     /* about section */
+
     .about-section {
         margin-top: 80px;
     }
 
     .about-container h2 {
-        width: 60vw;
         font-weight: 500;
         font-size: 2rem;
     }
 
     .about-container p {
-        padding: 0 50px;
-        margin: 30px;
+        padding: 0 10px;
         text-align: center;
     }
 
     .about-subcriber {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 100vw;
     }
 
-    .about-subcriber {
-        width: 120px;
-    }
+
     /* card-section */
-    .card-section{
+    .card-section {
         grid-template-columns: 1fr;
-       grid-template-areas: none;
-       padding: 10px;
-       /* width: 50vw; */
+        grid-template-areas: none;
+        padding: 10px;
         gap: 15px;
-        align-items: center;
-        justify-items: center;
+        width: 90vw;
     }
 
-    .why-chose-section{
+
+    .why-chose-section {
         align-items: center;
         justify-items: center;
         padding: 0 70px;
     }
-    .audio, .mobile, .global, .interview, .resources {
-        grid-area: auto; 
+
+    .audio,
+    .mobile,
+    .global,
+    .interview,
+    .resources {
+        grid-area: auto;
     }
-    .why-chose-section h2{
-        font-weight: 500;
+
+    .why-chose-section h2 {
+        font-weight: 400;
         font-size: 2rem;
-        margin: 10px auto;
-}
+        padding-top: 30px;
+        text-align: center;
+        width: 380px;
+        margin: 10px 10px;
 
-/* episodes-container */
+    }
 
-.episodes-container{
-    grid-template-columns:1fr;
-}
-.Featured-Episodes h2{
-    font-weight: 600;
-    font-size: 2rem;
-}
-.video-wrapper{
-    width: 100%;
-}
-.card-text h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-/* Meet-Host */
-.Meet-Host h2{
-    font-size: 2rem;
-    font-weight: 500;
-}
-.meet-container{
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}
-/* Fotter */
-.fotter {
-    min-height: 30vh;
-    padding: 10px 5px;
-}
+    /* episodes-container */
 
-.social-link{
- justify-content: center;
-    align-items: center;
-}
-.social-icon a{
-    gap: 5px;;
-    align-items: center;
-    margin-right: 10px;
-   
-}
+    .episodes-container {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        margin: 0;
+        padding: 0;
+    }
 
-.social-icon{
- margin-right: 25px;
-}
-.fotter-section h2{
-    font-weight: 500;
-    font-size: 2rem;
-    margin: 0 auto;
-}
-.fotter-icon .social-icon{
-grid-template-columns: repeat(4,1fr);
-gap: 5px;
-justify-items: center;
 
-}
+    .Featured-Episodes h2 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .video-wrapper {
+        width: 100%;
+    }
+
+    .card-text h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .card-text {
+        padding: 10px;
+    }
+
+    /* Meet-Host */
+    .Meet-Host h2 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .meet-container {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .meet-social-link {
+        justify-content: center;
+    }
+
+    /* Fotter */
+    .fotter-section {
+        width: 390px;
+    }
+
+    .fotter-container {
+        position: relative;
+        height: auto;
+        padding-bottom: 80px;
+    }
+
+    .fotter-logo h2 {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .social-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        margin-bottom: 20px;
+        justify-items: center;
+    }
+
+    .social-icon li {
+        margin-bottom: 20px;
+    }
+
+    .social-icon li a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: rgb(214, 210, 210);
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+
+
 }
 
 
@@ -713,7 +780,7 @@ justify-items: center;
 
 /* Rsponsive for Desktop */
 
-@media screen and (min-width: 576px) and (max-width: 1440px){
+@media screen and (min-width: 576px) and (max-width: 1440px) {
     .mobile-navbar {
         display: none;
     }
@@ -721,28 +788,47 @@ justify-items: center;
 
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .card-section{
+    .card-section {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-         gap: 20px;
-         grid-template-areas: 
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        grid-template-areas:
             "audio mobile mobile"
             "audio global global"
             "interview interview resources";
-            margin-bottom: 50px;
+        margin-bottom: 50px;
     }
-    
-    .audio { grid-area: audio; }
-    .mobile { grid-area: mobile; }
-    .global { grid-area: global; }
-    .interview { grid-area: interview; }
-    .resources { grid-area: resources; }
+
+    .audio {
+        grid-area: audio;
+    }
+
+    .mobile {
+        grid-area: mobile;
+    }
+
+    .global {
+        grid-area: global;
+    }
+
+    .interview {
+        grid-area: interview;
+    }
+
+    .resources {
+        grid-area: resources;
+    }
+
     /* .card-section {
         grid-template-columns: 1fr 1fr; 
         grid-template-areas: none; 
     } */
-    .audio, .mobile, .global, .interview, .resources {
-        grid-area: auto; 
+    .audio,
+    .mobile,
+    .global,
+    .interview,
+    .resources {
+        grid-area: auto;
     }
 
 }
