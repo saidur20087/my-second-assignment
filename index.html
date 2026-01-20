@@ -21,15 +21,18 @@
 <body class="inter-font ">
 
     <!-- Desktop Navbar -->
-    <header class="navbar desktop-nav">
+    <header class="desktop-nav">
         <nav class="navber">
-            <h2 class="logo">Tech<span>Wave</span> </h2>
-            <ul class="nav-menu">
-                <li><a href="">About</a></li>
-                <li><a href="">Episodes</a></li>
-                <li><a href="">Host</a></li>
-            </ul>
-            <button class="btn-primary">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+            <div> <h2 class="logo">Tech<span>Wave</span> </h2></div> 
+            <div>
+                <ul class="nav-menu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Episodes</a></li>
+                    <li><a href="">Host</a></li>
+                </ul>
+            </div>
+
+            <div><button class="btn-primary">Subscribe<i class="fa-solid fa-arrow-right"></i></button></div>   
         </nav>
     </header>
 
@@ -43,7 +46,7 @@
 
     <!-- hero section -->
     <section class="hero-section">
-        <div>
+        <div class="hero-container">
             <div class="banner-section">
                 <div class="hero-img">
                     <img src="./assets/microphone.png" alt="Microphone" class="mic-icon">
@@ -78,6 +81,8 @@
                 and share stories of personal growth from industry leaders.</p>
             <p class="about-content-bottom">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
         </div>
+
+        <div class="about-line"></div>
 
         <div class="about-subcriber">
             <div class="subcriber-content">
@@ -139,51 +144,58 @@
         </div>
     </section>
     <!-- Featured Episodes -->
-    <section class="Featured-Episodes">
-        <h2>Featured Episodes</h2>
+    <section class="Featured-Section">
+
+        <div class="Featured-Episodes">
+            <div class="featured-container">
+                <h2>Featured Episodes</h2>
         
-        <div class="episodes-container">
+                <div class="episodes-container">
+                    
+                    <div class="Featured-content">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/XIWFOmsmsn4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-text">
+                            <h3>The Future of AI in Everyday Life</h3>
+                            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <div class="time-info">
+                                <img src="./assets/clock.png" alt="clock">
+                                <span>42 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Featured-content">
+                        <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/HVuG3qfcjes" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-text">
+                            <h3>Building Better Habits for Remote Work</h3>
+                            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <div class="time-info">
+                                <img src="./assets/clock.png" alt="clock">
+                                <span>35 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Featured-content">
+                        <div class="video-wrapper">
+                            <iframe width="827" height="465" src="https://www.youtube.com/embed/fZmQ_aPXJAM" title="The Best Tech Jobs for 2025: High Demand &amp; High Pay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-text">
+                            <h3>Career Growth in Tech: A Roadmap</h3>
+                            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                            <div class="time-info">
+                                <img src="./assets/clock.png" alt="clock">
+                                <span>51 min</span>
+                            </div>
+                        </div>
+                    </div>
             
-            <div class="Featured-content">
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/XIWFOmsmsn4" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="card-text">
-                    <h3>The Future of AI in Everyday Life</h3>
-                    <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                    <div class="time-info">
-                        <img src="./assets/clock.png" alt="clock">
-                        <span>42 min</span>
                     </div>
-                </div>
             </div>
-            <div class="Featured-content">
-                <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/HVuG3qfcjes" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="card-text">
-                    <h3>Building Better Habits for Remote Work</h3>
-                    <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                    <div class="time-info">
-                        <img src="./assets/clock.png" alt="clock">
-                        <span>35 min</span>
-                    </div>
-                </div>
-            </div>
-            <div class="Featured-content">
-                <div class="video-wrapper">
-                    <iframe width="827" height="465" src="https://www.youtube.com/embed/fZmQ_aPXJAM" title="The Best Tech Jobs for 2025: High Demand &amp; High Pay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="card-text">
-                    <h3>Career Growth in Tech: A Roadmap</h3>
-                    <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
-                    <div class="time-info">
-                        <img src="./assets/clock.png" alt="clock">
-                        <span>51 min</span>
-                    </div>
-                </div>
-            </div>
-    
-            </div>
+
+        </div>
+
     </section>
     <!-- Meet the Host -->
 

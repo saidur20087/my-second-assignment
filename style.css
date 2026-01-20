@@ -48,14 +48,15 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #49494b;
-    padding: 0 120px;
+  justify-items: center;
+  padding: 5px 120px;
 }
 
 .navber .logo {
     font-weight: 700;
     font-size: 3.2rem;
     color: #FFFFFF;
-    margin: 0 20px;
+    margin: 0 auto;
 }
 
 .navber .logo span {
@@ -66,6 +67,7 @@ body {
     display: flex;
     list-style: none;
     gap: 32px;
+
 }
 
 .nav-menu a {
@@ -93,6 +95,7 @@ body {
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
+    margin-left: 50px;
 }
 
 .btn-primary:hover,
@@ -103,9 +106,13 @@ body {
 }
 
 /* hero-section */
-.banner-section {
+
+.hero-container {
     background: url('./assets/hero-bg.png') no-repeat center center/cover;
-    min-height: 50vh;
+   align-content: center;
+ 
+}
+.banner-section {
     display: flex;
     justify-content: center;
     color: white;
@@ -207,10 +214,10 @@ body {
     margin-top: 150px;
     background-color: #1A0B2E;
 }
-.about-container{
+/* .about-container{
     margin-bottom: 80px;
     border-bottom: 1px solid #49494b;
-}
+} */
 
 .about-container h2 {
     font-weight: 600;
@@ -252,15 +259,21 @@ body {
     color: white;
 }
 
+.about-line{
+    border-bottom: 1px solid #49494b;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 /* why-chose-section */
 .why-chose-section{
     margin-top: 120px;
     background-color: #230E3D;
-    padding: 50px 120px;  
+    padding: 50px 120px; 
 }
 
-.why-chose-section h2, .Meet-Host h2,
- .Featured-Episodes h2{
+.why-chose-section h2, .Meet-Host h2
+{
     font-weight: 600;
     font-size: 2.8rem;
     color: white;
@@ -277,6 +290,7 @@ body {
         "audio global global"
         "interview interview resources";
         margin-bottom: 50px;
+
 }
 
 .audio { grid-area: audio; }
@@ -287,9 +301,12 @@ body {
 
 .card-container{
     background-color: #351165;
-    padding:80px 10px 10px 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
     border-radius: 20px;
     border: 1px solid #3d2b5e;
+    justify-items: center;
 }
 
 .card-container img{
@@ -311,38 +328,44 @@ body {
 }
 
 /* Featured-Episodes */
+.Featured-Section{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
 .Featured-Episodes{
     background-color: #1A0B2E;
     color: white;
-    padding: 20px 20px;
-    text-align: center;
-    justify-items: center;
-    margin: 40px auto;
+}
+
+.featured-container h2 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: white;
     margin-bottom: 50px;
+    margin-top: 70px;
+    text-align: center;
 }
 
 .episodes-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    padding: 0 80px;
+    gap: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 
 .Featured-content{
     background-color: #250D44;
     border-radius: 20px;
-    overflow: hidden;
     text-align: left;
-    display: flex;
     flex-direction: column;
-    max-width: 300px;
     gap: 20px;
 }
 .video-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%;
+    padding-top: 70.25%;
     background-color: #000; 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -357,9 +380,6 @@ body {
     height: 100%;
 }
 
-.video-wrapper iframe{
-    margin: 0 auto;
-}
 .card-text {
     padding:24px;
     margin: 0 auto;
@@ -385,7 +405,7 @@ body {
 /* meet-container */
 
 .Meet-Host{
-    margin-bottom: 120px;
+    margin-bottom: 120px; 
 }
 .meet-container{
     background-color: #29104b;
@@ -516,14 +536,16 @@ body {
 
     /* heo section */
     .banner-section {
-        min-height: 30vh;
-        padding: 30px 15px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+
     }
 
     .hero-img {
         height: 200px;
         width: 200px;
-        margin-bottom: 50px;
+
     }
 
     .hero-text p {
@@ -631,10 +653,16 @@ body {
     min-height: 30vh;
     padding: 10px 5px;
 }
+
+.social-link{
+ justify-content: center;
+    align-items: center;
+}
 .social-icon a{
     gap: 5px;;
     align-items: center;
     margin-right: 10px;
+   
 }
 
 .social-icon{
