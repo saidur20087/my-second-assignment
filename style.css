@@ -134,6 +134,20 @@ body {
 
 .mic-icon {
     width: 100px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero-img:hover .mic-icon {
+    animation: continuous-rotate 2s linear infinite; 
+}
+
+@keyframes continuous-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .small-badge {
@@ -214,10 +228,6 @@ body {
     margin-top: 150px;
     background-color: #1A0B2E;
 }
-/* .about-container{
-    margin-bottom: 80px;
-    border-bottom: 1px solid #49494b;
-} */
 
 .about-container h2 {
     font-weight: 600;
