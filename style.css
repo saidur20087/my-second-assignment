@@ -558,7 +558,7 @@ body {
     }
 
     .mic-icon {
-        width: 60px;
+        width: 80px;
     }
 
     .small-badge {
@@ -596,6 +596,7 @@ body {
     .about-container h2 {
         width: 60vw;
         font-weight: 500;
+        font-size: 2rem;
     }
 
     .about-container p {
