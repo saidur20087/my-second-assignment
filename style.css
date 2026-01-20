@@ -492,7 +492,7 @@ body {
     border: none;
     position: relative;
     height: 400px;
-    width: 100vw;
+    width: 100%;
     display: grid;
     justify-items: center;
     align-content: center;
